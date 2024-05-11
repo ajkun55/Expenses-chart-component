@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root{
+    --clr-Soft-red: hsl(10, 79%, 65%);
+    --clr-Cyan: hsl(186, 34%, 60%);
+
+    --clr-Dark-brown: hsl(25, 47%, 15%);
+    --clr-Medium-brown: hsl(28, 10%, 53%);
+    --clr-Cream: hsl(27, 66%, 92%);
+    --clr-Very-pale-orange: hsl(33, 100%, 98%);
+
+    --fw-7: 700;
+}
+
+.bold{
+  font-weight: var(--fw-7);
+}
+
+body{
+    min-height: max(100vh, 1024px);
+    font-family: "DM Sans", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    background-color: var(--clr-Cream);
+    display: grid;
+    grid-template-rows: 1fr auto;
+}
+
+main{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container{
+  width: clamp(30%, 540px, 90%);
+  height: clamp(50%, 660px, 100%);
+}
+
+.header{
+  background-color: var(--clr-Soft-red);
+  margin-bottom: 25px;
+  border-radius: 1rem;
+  padding: 1.75rem 2.4rem;
+}
+
+.card{
+  background-color: var(--clr-Very-pale-orange);
+  height: clamp(30%, 510px, 100%);
+  border-radius: 1rem;
+  padding: 2.4rem;
+}
+
+h1{
+  font-size: 2.2rem;
+}
+
+.left-part span{
+  font-size: 1.6rem;  
+  color: var(--clr-Very-pale-orange);
+}
+
+.left-part p{
+  color: var(--clr-Cream);
+  padding-block-end: 0.8rem;
+}
+
+
+.chart{
+  height: 15rem; 
+}
+
+.chart p{
+  text-align: center;
+}
+
+
+.height{
+  background-color: var(--clr-Soft-red);
+  border-radius: 0.3rem;
+  margin-bottom: 1rem;
+  width: clamp(10px, 2.5rem, 8vw);
+  margin-inline: auto;
+}
+
+.height:is(:hover,:focus){
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+
+.value{
+  font-size: 0.9rem;
+  color: var(--clr-Very-pale-orange);
+  background-color: var(--clr-Dark-brown);
+  padding: 0.4rem;
+  margin-bottom: 0.5rem;
+  border-radius: 0.2rem;
+  display: none;
+}
+
+.cyan{
+  background-color: var(--clr-Cyan)!important;
+}
+
+.flex{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.line{
+  height: 1px;
+  padding: 0;
+  background-color: var(--clr-Medium-brown);
+  opacity: 0.5;
+  margin-block: 2rem;
+}
+
+.light, .plot p{
+  color: var(--clr-Medium-brown);
+}
+
+.left .bold{
+  font-size: 2.6rem;
+}
+
+.right .bold{
+  text-align: end;
+}
+
+@media (width < 450px){
+  body{
+    font-size: 14px;
+  }
+  h1{
+    font-size: 1.1rem
+  }
+  .header{
+    padding: 1rem;
+  }
+  .card{
+    padding: 1rem;
+    height: auto;
+  }
+  .left .bold{
+    font-size: 1.5rem;
+  }
+}
+
+
+
+
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }

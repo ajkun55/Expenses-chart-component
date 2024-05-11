@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Expenses chart component</title>
+
+  <link rel="stylesheet" href="./styles.css" class="css">
+</head>
+<body>
+
+  <main>
+    <div class="container">
+
+      <div class="header flex">
+        <div class="left-part">
+          <p>My balance</p>
+          <span class="bold">$921.48</span>
+        </div>
+        <img src="./images/logo.svg" alt="">
+      </div>
+
+      <div class="card">
+         <h1 class="bold">Spending - Last 7 days</h1>
+
+         <div class="chart flex">
+          <div class="plot">
+            <div class="value"></div>
+            <div class="height"></div>
+            <p>mon</p>
+          </div>
+          <div class="plot">
+            <div class="value"></div>
+            <div class="height"></div>
+            <p>tue</p>
+          </div>
+          <div class="plot">
+            <div class="value"></div>
+            <div class="height cyan"></div>
+            <p>wed</p>
+          </div>
+          <div class="plot">
+            <div class="value"></div>
+            <div class="height"></div>
+            <p>thu</p>
+          </div>
+          <div class="plot">
+            <div class="value"></div>
+            <div class="height"></div>
+            <p>fri</p>
+          </div>
+          <div class="plot">
+            <div class="value"></div>
+            <div class="height"></div>
+            <p>sat</p>
+          </div>
+          <div class="plot">
+            <div class="value"></div>
+            <div class="height"></div>
+            <p>sun</p>
+          </div>
+         </div>
+
+         <div class="line"></div>
+
+         <div class="footer flex">
+          <div class="left">
+            <p class="light">Total this month</p>
+            <p class="bold">$478.33</p>
+          </div>
+          <div class="right">
+            <p class="bold">+2.4%</p>
+            <p class="light">from last month</p>
+          </div>
+         </div>
+
+      </div>
+    </div>
+  </main> 
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://github.com/ajkun55/Expenses-chart-component">John A</a>.
+  </div>
+  <script src="./script.js"></script>
+</body>
+</html>
